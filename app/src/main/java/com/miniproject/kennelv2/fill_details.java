@@ -35,11 +35,13 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 public class fill_details extends AppCompatActivity {
     EditText name, mobile, location, email, comment;
     ImageView imageView;
-    Button camera,submit_button;
+    Button camera,submit_button, getlocation;
     FirebaseStorage storage;
     StorageReference storageReference;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private Uri filePath;
+
+
 
     private final int PICK_IMAGE_REQUEST = 71;
     @Override
@@ -56,6 +58,18 @@ public class fill_details extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.dogimage);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
+
+        getlocation = (Button) findViewById(R.id.getloc);
+        getlocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Searches for 'Animal Shelters' near me
+                Uri gmmIntentUri = Uri.parse("geo:0, 0?q=Animal+Shelter+near+me");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         submit_button.setOnClickListener(new View.OnClickListener() {
@@ -174,5 +188,6 @@ public class fill_details extends AppCompatActivity {
             }
         }
     }
+
 }
 

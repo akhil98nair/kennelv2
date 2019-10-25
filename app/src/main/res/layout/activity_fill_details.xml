@@ -65,20 +65,21 @@
         android:fontFamily="@font/montserratlight"
         android:paddingLeft="20dp"
         android:hint="Email ID"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dogimage" />
     <Button
         android:id="@+id/camerabutton"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_margin="12dp"
         android:textSize="18dp"
         android:background="@drawable/ripple"
         android:fontFamily="@font/montserratsemibold"
         android:textColor="@color/tabtextcolor"
-        android:text="Take a photo"/>
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/dogimage" />
+        android:text="CHoose a photo"/>
+
     <Button
         android:id="@+id/submit"
         android:layout_width="300dp"
@@ -90,4 +91,14 @@
         android:textColor="@color/colorAccent"
         android:text="Submit Now"/>
 
+    <Button
+        android:id="@+id/getloc"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:textSize="13dp"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@color/tabtextcolor"
+        android:text="Or Find Animal Shelters Near Me"/>
 </LinearLayout>
