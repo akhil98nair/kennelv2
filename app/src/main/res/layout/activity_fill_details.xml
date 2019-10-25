@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fill_details"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Help an angel!"
+        android:fontFamily="@font/montserratregular"
+        android:textSize="18pt"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/montserratlight"
+        android:hint="Name"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/montserratlight"
+        android:paddingLeft="20dp"
+        android:hint="Contact Number"/>
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/montserratlight"
+        android:paddingLeft="20dp"
+        android:hint="Location"/>
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/montserratlight"
+        android:paddingLeft="20dp"
+        android:hint="Comment"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/montserratlight"
+        android:paddingLeft="20dp"
+        android:hint="Email ID"/>
+    <Button
+        android:id="@+id/camerabutton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:textSize="18dp"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@color/tabtextcolor"
+        android:text="Take a photo"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dogimage" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@color/colorAccent"
+        android:text="Submit Now"/>
+
+</LinearLayout>
