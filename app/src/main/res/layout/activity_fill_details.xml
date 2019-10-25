@@ -38,15 +38,34 @@
         android:fontFamily="@font/montserratlight"
         android:paddingLeft="20dp"
         android:hint="Contact Number"/>
-    <EditText
-        android:id="@+id/location"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/edit_round"
-        android:fontFamily="@font/montserratlight"
-        android:paddingLeft="20dp"
-        android:hint="Location"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_round"
+            android:fontFamily="@font/montserratlight"
+            android:paddingLeft="20dp"
+            android:hint="Location"/>
+        <Button
+            android:id="@+id/showAddress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:textSize="13dp"
+            android:background="@drawable/loc1"
+
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/tabtextcolor" />
+    </LinearLayout>
+
+
+
     <EditText
         android:id="@+id/comment"
         android:layout_width="300dp"
