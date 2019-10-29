@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">kennelv2</string>
+    <string name="app_name">kennel</string>
     <string name="tab_text_1">Home</string>
     <string name="tab_text_2">Dashboard</string>
     <string name="title_activity_main">MainActivity</string>

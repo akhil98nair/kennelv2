@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".fill_details"
     android:orientation="vertical"
-    android:gravity="center"
+
     android:background="@color/colorPrimaryDark">
     <TextView
         android:layout_width="match_parent"
@@ -27,7 +27,9 @@
         android:background="@drawable/edit_round"
         android:fontFamily="@font/montserratlight"
         android:hint="Name"
-        android:paddingLeft="20dp" />
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        />
 
     <EditText
         android:id="@+id/number"
@@ -37,13 +39,16 @@
         android:background="@drawable/edit_round"
         android:fontFamily="@font/montserratlight"
         android:paddingLeft="20dp"
-        android:hint="Contact Number"/>
+        android:hint="Contact Number"
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+android:layout_gravity="center">
         <EditText
+
             android:id="@+id/location"
             android:layout_width="225dp"
             android:layout_height="50dp"
@@ -74,7 +79,8 @@
         android:background="@drawable/edit_round"
         android:fontFamily="@font/montserratlight"
         android:paddingLeft="20dp"
-        android:hint="Comment"/>
+        android:hint="Comment"
+        android:layout_gravity="center"/>
     <EditText
         android:id="@+id/email"
         android:layout_width="300dp"
@@ -83,21 +89,47 @@
         android:background="@drawable/edit_round"
         android:fontFamily="@font/montserratlight"
         android:paddingLeft="20dp"
-        android:hint="Email ID"/>
+        android:hint="Email ID"
+        android:layout_gravity="center"/>
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/dogimage" />
-    <Button
-        android:id="@+id/camerabutton"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_margin="12dp"
-        android:textSize="18dp"
-        android:background="@drawable/ripple"
-        android:fontFamily="@font/montserratsemibold"
-        android:textColor="@color/tabtextcolor"
-        android:text="CHoose a photo"/>
+        android:id="@+id/dogimage"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Take a PHOTO"
+            android:textColor="@color/tabtextcolor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/camerabutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/ripple"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="CHoose a photo"
+            android:textColor="@color/tabtextcolor"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/upload"/>
+
+
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/submit"
@@ -108,7 +140,8 @@
         android:background="@drawable/ripple"
         android:fontFamily="@font/montserratsemibold"
         android:textColor="@color/colorAccent"
-        android:text="Submit Now"/>
+        android:text="Submit Now"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/getloc"
@@ -119,5 +152,8 @@
         android:background="@drawable/ripple"
         android:fontFamily="@font/montserratsemibold"
         android:textColor="@color/tabtextcolor"
-        android:text="Or Find Animal Shelters Near Me"/>
+        android:text="Or Find Animal Shelters Near Me"
+        android:layout_gravity="center"/>
+
+
 </LinearLayout>
